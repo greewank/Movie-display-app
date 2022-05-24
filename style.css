@@ -1,0 +1,102 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Merriweather", serif;
+  line-height: 1.6rem;
+}
+
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+} */
+
+.main-container {
+  display: flex;
+  background: url(./hall.jpeg) no-repeat center center/cover;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.navigation {
+  border: 1px solid black;
+  padding: 0.6rem 0.5rem;
+  border-radius: 0.8rem;
+  background-color: rgba(222, 184, 135, 0.637);
+}
+.navigation h3 {
+  text-align: center;
+}
+.navigation input {
+  border: transparent;
+  background: transparent;
+  background-color: rgba(128, 128, 128, 0.616);
+  border-radius: 0.6rem;
+  padding: 0.2rem 0.8rem;
+  transition: 0.3s all linear;
+  margin-right: 0.3rem;
+}
+.navigation input:hover {
+  box-shadow: 4px 5px 6px grey;
+}
+.btn-container {
+  border: transparent;
+  background: transparent;
+  border-radius: 0.6rem;
+  background-color: dimgray;
+  font-size: 0.9rem;
+  padding: 0.2rem 0.6rem;
+  cursor: pointer;
+  transition: 0.3s all linear;
+}
+.btn-container:hover {
+  background-color: rgba(0, 128, 0, 0.561);
+  box-shadow: 4px 5px 6px grey;
+}
+
+.movie-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+}
+
+.images {
+  height: 300px;
+  width: 200px;
+  margin: 0.9rem auto;
+}
+
+.middle {
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  font-size: large;
+}
+
+.movie-container.loading {
+  visibility: hidden;
+  max-height: 30px;
+  position: relative;
+}
+
+/* .movie-container.loading ::after {
+  visibility: visible; */
+/* content: "Loading.....";
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
+} */
+
+@media screen and (max-width: 550px) {
+  .middle {
+    font-size: 1.1rem;
+    justify-content: center;
+  }
+}
